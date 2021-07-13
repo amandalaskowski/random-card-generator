@@ -1,1 +1,45 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+.card {
+  margin: auto;
+  background-color: white;
+  width: 300px;
+  height: 450px;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+.div2 {
+  width: 100%;
+  display: inline-block;
+  height: 100px;
+}
+
+.div3 {
+  width: 100%;
+  display: inline-block;
+  height: 250px;
+}
+
+.div4 {
+  width: 100%;
+  display: inline-block;
+  height: 100px;
+  border-radius: 0px 0px 25px 25px;
+}
+
+/* .div2-2 {
+  
+  display: inline-block;
+  height: 100px;
+  width: 90px;
+  margin-left: 20px;
+} */
+
+/* .div4-4 {
+  background-color: blue;
+  display: inline-block;
+  height: 100px;
+  width: 90px;
+  margin-right: 20px;
+} */
