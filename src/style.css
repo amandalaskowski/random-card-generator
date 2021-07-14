@@ -1,52 +1,16 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
-/* .card {
-  margin: auto;
-  background-color: white;
-  width: 300px;
-  height: 450px;
-  display: inline-block;
-  border-radius: 25px;
-} */
-
-/* .div2 {
-  width: 100%;
-  display: inline-block;
-  height: 100px;
-}
-
-.div3 {
-  width: 100%;
-  display: inline-block;
-  height: 250px;
-}
-
-.div4 {
-  width: 100%;
-  display: inline-block;
-  height: 100px;
-  border-radius: 0px 0px 25px 25px;
-} */
-
-/* .div2-2 {
-  
-  display: inline-block;
-  height: 100px;
-  width: 90px;
-  margin-left: 20px;
-} */
-
-/* .div4-4 {
-  background-color: blue;
-  display: inline-block;
-  height: 100px;
-  width: 90px;
-  margin-right: 20px;
-} */
-
 .card {
   height: 450px;
   width: 300px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card::before,
+.card::after {
+  font-size: 100px;
+  position: absolute;
 }
 
 @import "~bootstrap/dist/css/bootstrap.min.css";
@@ -62,11 +26,12 @@
 .heart::before {
   position: absolute;
   left: 1.5rem;
+  top: -1rem;
 }
 .heart::after {
   right: 1.5rem;
   position: absolute;
-  bottom: 1.5rem;
+  bottom: -1rem;
   transform: scale(1, -1);
 }
 .heart,
@@ -85,11 +50,12 @@
 .diamonds::before {
   position: absolute;
   left: 1.5rem;
+  top: -1rem;
 }
 .diamonds::after {
   right: 1.5rem;
   position: absolute;
-  bottom: 1.5rem;
+  bottom: -1rem;
   transform: scale(1, -1);
 }
 
@@ -105,11 +71,12 @@
 .spades::before {
   position: absolute;
   left: 1.5rem;
+  top: -1rem;
 }
 .spades::after {
   right: 1.5rem;
   position: absolute;
-  bottom: 1.5rem;
+  bottom: -1rem;
   transform: scale(1, -1);
 }
 
@@ -125,10 +92,32 @@
 .clubs::before {
   position: absolute;
   left: 1.5rem;
+  top: -1rem;
 }
 .clubs::after {
   right: 1.5rem;
   position: absolute;
-  bottom: 1.5rem;
+  bottom: -1rem;
   transform: scale(1, -1);
+}
+
+.heart,
+.diamonds,
+.clubs,
+.spades {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+button {
+  border-radius: 25px;
+  color: black;
 }
